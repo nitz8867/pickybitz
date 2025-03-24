@@ -31,5 +31,11 @@ append :linked_dirs, 'log', 'tmp', 'public/system', 'public/uploads', 'vendor/bu
 #   auth_methods: %w(publickey)
 # }
 
+namespace :postgresql do
+  task :started do
+    # Custom logic for checking PostgreSQL status
+  end
+end
+
 # Configure your branches
 set :branch, 'master'  # Set the branch name you want to deploy
