@@ -313,8 +313,8 @@ GEM
     tailwindcss-rails (4.2.1)
       railties (>= 7.0.0)
       tailwindcss-ruby (~> 4.0)
-    tailwindcss-ruby (4.0.15-x86_64-darwin)
-    tailwindcss-ruby (4.0.15-x86_64-linux)
+    tailwindcss-ruby (4.0.9-x86_64-darwin)
+    tailwindcss-ruby (4.0.9-x86_64-linux-gnu)
     thor (1.3.2)
     timeout (0.4.3)
     turbo-rails (2.0.13)
@@ -371,7 +371,7 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   tailwindcss-rails (~> 4.2)
-  tailwindcss-ruby (~> 4.0.9)
+  tailwindcss-ruby (= 4.0.9)
   turbo-rails
   tzinfo-data
   web-console
