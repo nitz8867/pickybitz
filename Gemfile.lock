@@ -80,7 +80,7 @@ GEM
     ast (2.4.3)
     base64 (0.2.0)
     bcrypt (3.1.20)
-    bcrypt_pbkdf (1.1.1)
+    bcrypt_pbkdf (1.1.1-arm64-darwin)
     bcrypt_pbkdf (1.1.1-x86_64-darwin)
     benchmark (0.4.0)
     bigdecimal (3.1.9)
@@ -163,7 +163,6 @@ GEM
     marcel (1.0.4)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.8)
     minitest (5.25.5)
     msgpack (1.8.0)
     net-imap (0.5.6)
@@ -181,8 +180,9 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.4)
-    nokogiri (1.18.6)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.18.6-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.6-x86_64-darwin)
       racc (~> 1.4)
     ostruct (0.6.1)
     pagy (9.3.4)
@@ -315,8 +315,8 @@ GEM
     tailwindcss-rails (4.2.1)
       railties (>= 7.0.0)
       tailwindcss-ruby (~> 4.0)
+    tailwindcss-ruby (4.0.16-arm64-darwin)
     tailwindcss-ruby (4.0.16-x86_64-darwin)
-    tailwindcss-ruby (4.0.16-x86_64-linux-gnu)
     thor (1.3.2)
     timeout (0.4.3)
     turbo-rails (2.0.13)
@@ -343,8 +343,8 @@ GEM
     zeitwerk (2.6.18)
 
 PLATFORMS
-  x86_64-darwin-21
-  x86_64-linux
+  arm64-darwin
+  x86_64-darwin
 
 DEPENDENCIES
   administration-zero (~> 1.0)
@@ -378,4 +378,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   2.3.3
+   2.6.6
