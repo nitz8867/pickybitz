@@ -39,3 +39,7 @@ end
 
 # Configure your branches
 set :branch, 'master'  # Set the branch name you want to deploy
+
+set :default_env, {
+  'SECRET_KEY_BASE' => 'c21f386c38b0f5721f1f61eb247dab75e47aa5b82da6b5caf97f6ad77b5c6bf8e4c8e32ab047054f40db9ed6ded660e25a9d9a897f74126d07160de6ae73fed8'
+}
