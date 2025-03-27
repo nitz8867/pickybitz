@@ -363,7 +363,6 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
-  nokogiri (= 1.18.6)
   pagy
   pg (~> 1.1)
   puma (>= 5.0)
