@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: pickybitz_production
   username: deploy
   password: deply123
+  port: 5432
