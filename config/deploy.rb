@@ -31,6 +31,28 @@ append :linked_dirs, 'log', 'tmp', 'public/system', 'public/uploads', 'vendor/bu
 #   auth_methods: %w(publickey)
 # }
 
+namespace :deploy do
+  task :install_nokogiri_dependencies do
+    on roles(:app) do
+      execute "sudo apt-get update && sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev"
+    end
+  end
+
+  
+  task :install_nokogiri do
+    on roles(:app) do
+      within release_path do
+        execute :bundle, "install --with nokogiri --deployment"
+      end
+    end
+  end
+  
+  before 'deploy:install_nokogiri', 'deploy:install_nokogiri_dependencies'
+  after :finishing, 'deploy:install_nokogiri'
+end
+
+
+
 namespace :postgresql do
   task :started do
     # Custom logic for checking PostgreSQL status
