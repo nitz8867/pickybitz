@@ -59,8 +59,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "tailwindcss-rails", "~> 4.2"
-
 gem "administration-zero", "~> 1.0"
 # Use Pagy to add paginated results [https://github.com/ddnexus/pagy]
 gem "pagy"
