@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: pickybitz_production
-  username: pickybitz
-  password: <%= ENV["PICKYBITZ_DATABASE_PASSWORD"] %>
+  username: deploy
+  password: deply123
