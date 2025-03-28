@@ -20,4 +20,4 @@ production:
   adapter: postgresql
   database: pickybitz_production
   username: deploy
-  password: deply123
+  password: deploy123
