@@ -14,8 +14,10 @@ set :rvm_ruby_version, 'ruby-3.1.0'  # Replace with your Ruby version
 set :rails_env, 'production'
 
 # Linked files and directories
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
-append :linked_dirs, 'log', 'tmp', 'public/system', 'public/uploads', 'vendor/bundle', 'node_modules'
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+
+# Default value for linked_dirs is []
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp', 'vendor/bundle', 'public/system', 'public/uploads', 'node_modules')
 
 # Set the database configuration
 # set :db_adapter, 'postgresql'
