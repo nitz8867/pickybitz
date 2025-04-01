@@ -39,9 +39,21 @@ min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
 
 threads min_threads_count, max_threads_count
 port ENV.fetch("PORT") { 3000 }
-environment ENV.fetch("RAILS_ENV") { "development" }
+environment ENV.fetch("RAILS_ENV") { "production" }
 pidfile ENV.fetch("PIDFILE") { "tmp/pids/puma.pid" }
-bind "unix:///home/deploy/pickybitz/shared/tmp/sockets/puma.sock"
+if Rails.env.development?
+  # Disable worker processes for development (only threads are used)
+  workers 0
+  preload_app! false
+  # Set the binding host for development
+  bind "tcp://0.0.0.0:3000"
+  # Set up debug logging (this can be verbose in development)
+  log_requests true
+end
+
+if Rails.env.production?
+  bind "unix:///home/deploy/pickybitz/shared/tmp/sockets/puma.sock"
+end
 
 plugin :tmp_restart
 
