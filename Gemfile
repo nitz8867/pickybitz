@@ -67,6 +67,8 @@ gem "ransack"
 # Spreadsheet Architect is a library that allows you to create XLSX, ODS, or CSV spreadsheets super easily [https://github.com/westonganger/spreadsheet_architect]
 gem "spreadsheet_architect"
 
+gem 'tailwindcss-rails'
+
 gem 'capistrano', '~> 3.17'
 gem 'capistrano-rails', '~> 1.6'
 gem 'capistrano-rvm', '~> 0.1.2'
