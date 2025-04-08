@@ -79,3 +79,5 @@ gem 'bcrypt_pbkdf', ">=1.0", "<2.0"
 gem 'nokogiri', '1.16.0'
 gem 'dotenv-rails', groups: [:development, :test]
 
+gem "bootstrap", "~> 5.3"
+gem "sassc-rails"
