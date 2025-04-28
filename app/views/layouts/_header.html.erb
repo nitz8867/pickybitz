@@ -1,0 +1,41 @@
+<!-- Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg fixed-top bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <%= image_tag 'Logo.png', alt: 'Logo', class: 'logo' %>
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="/pages/products"><i class="fas fa-plus-circle pe-2"></i>Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="/pages/service"><i class="fas fa-bell pe-2"></i>Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="/pages/about"><i class="fas fa-heart pe-2"></i>About</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-primary" href="/pages/contact_us" role="button">Get in touch</a>
+        </li>
+        <!-- <li class="nav-item ms-3">
+          <% if user_signed_in? %>
+          <form method="post" action="/admin/sign_out">
+            <input type="hidden" name="_method" value="delete" />
+            <input type="hidden" name="return_to" value="<%= request.fullpath %>" />
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+            <button class="btn btn-primary" type="submit">Sign Out</button>
+          </form>
+          <% elsif !(controller_name == 'sessions' && action_name == 'new') %>
+            <a class="btn btn-primary" href="/admin/sign_in" role="button">Sign in</a>
+          <% end %>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
