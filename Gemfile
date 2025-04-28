@@ -59,7 +59,19 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'sassc-rails'
-gem 'bootstrap', '~> 5.3'
+gem "sassc-rails"
+gem "bootstrap", "~> 5.3"
 
-gem 'devise'
+gem "devise"
+
+gem "capistrano", "~> 3.17"
+gem "capistrano-rails", "~> 1.6"
+gem "capistrano-rvm", "~> 0.1.2"
+gem "capistrano-postgresql", "~> 1.0.1"
+gem "capistrano3-puma"
+
+gem "ed25519", ">=1.2", "<2.0"
+gem "bcrypt_pbkdf", ">=1.0", "<2.0"
+
+gem "nokogiri", "1.16.0"
+gem "dotenv-rails", groups: [ :development, :test ]
