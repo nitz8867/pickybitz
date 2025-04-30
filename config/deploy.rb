@@ -43,7 +43,7 @@ end
 set :branch, "master"  # Set the branch name you want to deploy
 
 set :default_env, {
-  "SECRET_KEY_BASE" => "1dee92d80aeea1cb31a431dead41f470540484f1659e299b6ebbefaa4afb5dceeaa94417e17c8c2ea07b0f3b8b55bec9b30394e3c61b1530b0b64cad208320ed"
+  "SECRET_KEY_BASE" => "1166106dff82768f07bb82b19b3475f1e8a91d75859a3835d7339365d9e4446483819f5d897f3d816128e571dd680b3fab3c61c3eaceb8a2011c0ed051835f6e"
 }
 
 # Puma configuration
