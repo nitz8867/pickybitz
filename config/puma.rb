@@ -26,5 +26,9 @@ threads 4, 16
 # Preload app for better memory usage
 preload_app!
 
+puma_daemonize!
+puma_prune_bundler
+
+
 # Restart workers on memory leaks
 worker_timeout 60 if ENV.fetch("RAILS_ENV", "development") == "development"

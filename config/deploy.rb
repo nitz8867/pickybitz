@@ -45,9 +45,3 @@ set :branch, "master"  # Set the branch name you want to deploy
 set :default_env, {
   "SECRET_KEY_BASE" => "1166106dff82768f07bb82b19b3475f1e8a91d75859a3835d7339365d9e4446483819f5d897f3d816128e571dd680b3fab3c61c3eaceb8a2011c0ed051835f6e"
 }
-
-# Puma configuration
-
-set :puma_preload_app, true
-set :puma_daemonize, false
-set :puma_prune_bundler, true
