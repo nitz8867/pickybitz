@@ -5,7 +5,7 @@ set :application, "pickybitz"
 set :repo_url, "git@github.com:nitz8867/pickybitz.git"
 
 # Default deploy_to directory
-set :deploy_to, "/home/deploy/pickybitz"
+set :deploy_to, "/var/www/#{fetch(:application)}"
 
 # Set the RVM Ruby version
 set :rvm_ruby_version, "ruby-3.1.0"  # Replace with your Ruby version
