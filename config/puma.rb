@@ -7,7 +7,6 @@ threads threads_count, threads_count
 
 preload_app!
 
-rackup      DefaultRackup
 environment ENV.fetch("RAILS_ENV") { "production" }
 
 # Set up socket location
