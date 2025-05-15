@@ -14,7 +14,7 @@ environment ENV.fetch("RAILS_ENV") { "production" }
 app_dir = File.expand_path("../..", __FILE__)
 shared_dir = "#{app_dir}/shared"
 
-bind "unix://#{shared_dir}/tmp/sockets/sockets/puma.sock"
+bind "unix://#{shared_dir}/tmp/sockets/puma.sock"
 
 # Logging
 stdout_redirect "#{shared_dir}/log/puma.access.log", "#{shared_dir}/log/puma.error.log", true
