@@ -7,7 +7,7 @@ threads threads_count, threads_count
 
 preload_app!
 
-environment ENV.fetch("RAILS_ENV") { "production" }
+environment ENV.fetch("RAILS_ENV") { "development" }
 
 # Set up socket location
 app_dir = File.expand_path("../..", __FILE__)
