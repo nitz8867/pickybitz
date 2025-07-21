@@ -73,5 +73,5 @@ gem "capistrano3-puma"
 gem "ed25519", ">=1.2", "<2.0"
 gem "bcrypt_pbkdf", ">=1.0", "<2.0"
 
-gem "nokogiri", "1.16.0"
+gem "nokogiri", "1.18.9"
 gem "dotenv-rails", groups: [ :development, :test ]
